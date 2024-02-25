@@ -1,0 +1,32 @@
+.list {
+  margin: 24px 0 0 0;
+  padding: 0;
+
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.list__item {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: repeat(2, max-content);
+  align-items: center;
+  gap: 8px;
+
+  padding: 10px;
+
+  &--white {
+    background-color: #f3f1ed;
+  }
+
+  &--blue {
+    background-color: #d9e5eb;
+  }
+
+  @include vp-768 {
+    grid-template-columns: 50% 20% 20%;
+    grid-template-rows: auto;
+  }
+}

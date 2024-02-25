@@ -1,0 +1,59 @@
+@mixin itemStyle {
+  padding: 2px 7px;
+  border: 1px #000000 solid;
+  border-radius: 5px;
+  text-align: center;
+
+  font-size: 0.9em;
+  line-height: 150%;
+
+  transition: background-color 1s;
+
+  @media (hover: hover) {
+    &:hover {
+      background-color: var(--color-blue);
+      transition: background-color 1s;
+    }
+  }
+
+  @include vp-1024 {
+    font-size: 1.5em;
+    padding: 5px 10px;
+
+  }
+
+  @include vp-768 {
+    font-size: 1em;
+  }
+}
+
+.pagination {
+  @include container;
+  padding-top: 40px;
+  padding-bottom: 50px;
+}
+
+.pagination__list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.pagination__link {
+  @include itemStyle;
+
+  color: var(--color-default-black);
+
+  &--active {
+    color: #333333;
+    background-color: var(--color-blue);
+
+    pointer-events: none;
+  }
+
+  cursor: pointer;
+}

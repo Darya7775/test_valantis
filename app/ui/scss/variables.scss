@@ -1,0 +1,25 @@
+:root {
+  // color
+  --color-default-black: #000000;
+  --color-default-white: #ffffff;
+  --color-blue: #b3c7f0;
+
+  // mobile
+  --screen375px: 23.4em;
+  --screen425px: 26.5em;
+  --screen480px: 30em;
+  --screen540px: 33.7em;
+  --screen640px: 40em;
+  // tablet
+  --screen768px: 47.97em;
+  --screen960px: 60em;
+  // desktop
+  --screen1024px: 64em;
+  --screen1280px: 80em;
+  --screen1366px: 85.3em;
+  --screen1440px: 90em;
+  --screen1536px: 96em;
+  --screen1600px: 100em;
+  --screen1920px: 120em;
+  --screen2500px: 156.2em;
+}

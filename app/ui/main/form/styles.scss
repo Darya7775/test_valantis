@@ -1,0 +1,49 @@
+.form {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+
+  padding: 32px 0;
+}
+
+.form__form {
+  display: grid;
+  gap: 8px;
+
+  input {
+    padding: 8px;
+
+    border: 2px solid var(--color-blue);
+    border-radius: 8px;
+  }
+}
+
+.form__wrap-input {
+  display: grid;
+  gap: 8px;
+}
+
+.form__button {
+  padding: 10px;
+  border: 2px solid var(--color-blue);
+  border-radius: 16px;
+  background-color: inherit;
+
+  cursor: pointer;
+  transition: background-color 1s;
+
+  @media (hover: hover) {
+    &:hover {
+      border: 2px solid var(--color-blue);
+      background-color: var(--color-blue);
+      transition: background-color 1s;
+    }
+  }
+
+  &:disabled {
+    cursor: default;
+    border: 2px solid var(--color-blue);
+    background-color: inherit;
+  }
+}
